@@ -1,4 +1,4 @@
-# Module 12 Report##
+# Module 12 Report
 
 ## Project files
 - credit_risk_classification.ipynb
