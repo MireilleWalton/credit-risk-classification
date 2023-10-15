@@ -40,10 +40,28 @@ To further evaluate the models performance a confusion matrix is generated as we
 
 
 #### Classificaiton Report:
-  * Description of Model 2 Accuracy, Precision, and Recall scores.
+  * SKLearn's classificaiton report provides a snapshot of how well the applied machine learning model has performed on the test data by providing percentage values for correct positive predictions for Precision and Recall, and a weighted F1 Score of between 0 and 1, where 1 indicates better performance (Zach 2022)
+  * 
+    ![Screenshot 2023-10-15 at 12 48 57 pm](https://github.com/VioletRogue12/credit-risk-classification/assets/130148039/cf89d3b9-0616-494b-a7eb-b1548902cad3)
+
+An explanation of the different categories within the above credit risk classification report is provided below:
+
+##### "Precision: percentage of correct positive predictions relative to total positive predictions", (Zach, 2022)
+The report shows that the linear regression model correctly predicted 100% of total Healthy Loans, whereas it correctly predicted 87% of total High-risk loans.   
+
+##### "Recall: percentage of correct positive predictions relative to total actual positives" (ie true and false positives), (Zach, 2022)
+The report shows that the linear regression model correctly predicted 100% of total true/false positive Healthy Loans, whereas it correctly predicted 89% of total true/false positive High-risk loans. 
+
+##### "F1 Score: a weighted harmonic mean of precision and recall. The closer to 1, the better the model", (Zach, 2022)
+The linear regression model received a ratinig of 1 for Healthy Loans 0.88 for High-risk loans. 
 
 ## Summary
 
+Overall the linear regression model has performed very well in predicting the serviceability of loans.  The relevant organisation can feel confident in using the results to target individuals it may wish to offer additional benefits / incentives to garner loyalty from those customers; or to implement early intervention programs for individuals identified as being at high risk of defaulting on their loans.  
+
+
+
+## Options for machine learning models
 Choosing which machine learning model to use can be complex.  A data analyst may run one or more models against a data set in order to determine which provides the best results.  
 
 Roger Huang (FreeCodeCamp,2019) sets out three variables to consider when selecting a machine learning model to use on a given project: These include:
