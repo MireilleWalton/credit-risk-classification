@@ -1,4 +1,9 @@
-# Module 12 Report
+# Module 12 Report##
+
+## Project files
+- credit_risk_classification.ipynb
+- Resources > lending_data.csv
+- README.md 
 
 ## Overview of the Analysis
 
