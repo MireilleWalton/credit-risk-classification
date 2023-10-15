@@ -1,4 +1,4 @@
-# Module 12 Report Template
+# Module 12 Report
 
 ## Overview of the Analysis
 
@@ -20,13 +20,13 @@ The first step in building the model was to read the csv data file into a pandas
 
 Next is to separate the data into labels and features: 'labels' being the data that the model is being developed to predict, and 'features' being the data upon which the model will base its predictions. To do this, two variables are are created ('y' for lables and 'X' for features), and the relevant fields/columns from the dataframe are assigned to each variable.  
 
-The 'y' labels variable comprises the "loan_status" column; and the 'X' features variable comprises the remaining columns within the dataset, ie the 'loan-status'field is removed from to ensure the model does not incoporate the 'labels' data into the analysis, this is done using the pandas '.drop()' function.   
+The 'y' labels variable comprises the "loan_status" column; and the 'X' features variable comprises the remaining columns within the dataset, ie the 'loan-status'field is removed from to ensure the model does not incorporate the 'labels' data into the analysis, this is done using the pandas '.drop()' function.   
 
 Then the SKLearn 'train_test_learn' module is used to split the data into two sets: one set is used to train the model (58,152 rows of data were seleted by the module for training); and the second set is used to test its effectiveness (19,384 rows were selected by the model for testing).
 
-The LogisticRegression module from teh SKLearn library is then used to classify the data based on relationships or correlations that exist between the data points within the dataset (AWS, data unkown).  The 'model.score()' method provides an indication how well the model was able to classify the data by assigning a score between 0 and 1.  In this case the training data received a score of 0.9915 and the testing data a score of 0.9924, indicating that the model was very effective at classifying the data with only a marginal difference between training and testing and is therefore likely it will be an effective model to use to assess loan risk and creditworthiness of individuals (Varoquaux, G, data unknown).   
+The LogisticRegression module from teh SKLearn library is then used to classify the data based on relationships or correlations that exist between the data points within the dataset (AWS, data unkown).  The 'model.score()' method provides an indication of how well the model was able to classify the data by assigning a score between 0 and 1.  In this case the training data received a score of 0.9915 and the testing data a score of 0.9924, indicating that the model was very effective at classifying the data with only a marginal difference between training and testing.  The LinearRegression model there for can be considered to be an effective model to use to assess loan risk and creditworthiness of individuals (Varoquaux, G, data unknown).   
 
-To further evaluate the models performance a confusion matrix is generated as well as a classification report.  
+To further evaluate the model's performance a confusion matrix is generated, as well as a classification report.  
 
 
 ## Results
@@ -68,16 +68,15 @@ Roger Huang (FreeCodeCamp,2019) sets out three variables to consider when select
 
 - Unsupervised learning - requiring no initial processisng of the original data - vs supervised learning where some initial processing / cleaning of the data may be required to get it into a state where is it is ready to be used.  This may include re-labelling of columns, removing null values etc; 
 
-- Space and time considerations - the processing time for the various machine learning algorythms varies and may impact on performance and lead to a delay in output of results;
+- Space and time considerations - the processing time for the various machine learning algorythyms varies and may impact on performance and lead to a delay in output of results;
 
 - The output - this is the form of the desired results.  Examples provided by R Haung inlcude categorised data or predicting future data points.  
 
-Linear Regression models are useful for classification and prediction where 
-the data source is well structured or has already been distinctly labelled - ie supervised machine learning (AWS, date unknown).    
+Linear Regression models are useful for classification and prediction where the data source is well structured or has already been distinctly labelled - ie supervised machine learning (AWS, date unknown).    
 
 For unsupervised machine learning where pre-defined categories and labels are not referenced, the K-means clustering algorhythm can be used to group and cluster data by measuring the distance between each point (LEDU, 2018). 
 
-Other models to consider includes
+Other models to consider include:
 - decision trees which show how data has been split when applying the classification process
 - deep learning for unstructured and large scale data sets
 - linear support vector which can be used for test classification. 
